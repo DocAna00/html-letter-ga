@@ -6,6 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>News Letter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet prefetch"
+        href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css" />
     <style type="text/css">
         body {
             width: 100% !important;
@@ -18,6 +20,14 @@
 
         [style*="Helvetica"] {
             font-family: 'Helvetica', arial, sans-serif !important;
+        }
+
+        [style*="Graphik"] {
+            font-family: 'Graphik', 'Helvetica', arial, sans-serif !important;
+        }
+
+        [style*="HelveticaNeueCyr-Bold"] {
+            font-family: 'HelveticaNeueCyr-Bold', 'Helvetica', arial, sans-serif !important;
         }
 
         img {
@@ -43,6 +53,21 @@
 
         a {
             text-decoration: none;
+        }
+
+        @font-face {
+            font-family: 'Graphik';
+            src: url("Graphik-Regular-Web.eot");
+            src: url("Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"), url("Graphik-Regular-Web.woff2") format("woff2"), url("Graphik-Regular-Web.woff") format("woff"), url("Graphik-Regular-Web.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr-Bold';
+            src: url('fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
         }
 
         .menu {
@@ -155,6 +180,14 @@
             font-weight: normal;
         }
 
+        .aroma-text {
+            margin-top: 0;
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 140%;
+            font-weight: lighter;
+        }
+
         .aroma-picture {
             margin-bottom: 25px;
         }
@@ -215,6 +248,7 @@
             margin-bottom: 0;
             padding-top: 30px;
             font-size: 11px;
+            font-weight: bold;
             line-height: 150%;
             letter-spacing: 1.4px;
             text-transform: uppercase;
@@ -297,9 +331,13 @@
             display: none;
         }
 
-        @media (max-width: 320px) {
+        @media (max-width: 480px) {
             .table {
                 width: 320px !important;
+            }
+
+            .table-480 {
+                width: 480px !important;
             }
 
             .table-small {
@@ -381,14 +419,19 @@
             }
 
             .aroma-top-text {
-                font-size: 11px;
                 margin-bottom: 5px;
+                font-size: 11px;
             }
 
             .aroma-heading {
+                margin-bottom: 15px;
                 font-size: 25px;
                 line-height: 130%;
-                margin-bottom: 15px;
+            }
+
+            .aroma-text {
+                margin-bottom: 30px;
+                font-size: 16px;
             }
 
             .aroma-mobile {
@@ -448,7 +491,7 @@
             }
 
             .promo-table {
-                width: 320px !important;
+                width: 480px !important;
             }
 
             .footer-mobile {
@@ -511,30 +554,36 @@
                                 width="580" align="center">
                                 <tr>
                                     <td>
-                                        <p class="menu-item" style="font-family: Helvetica, arial, sans-serif;">новинки
+                                        <p class="menu-item"
+                                            style="font-family: Graphik, Helvetica, arial, sans-serif;">новинки
                                         </p>
                                     </td>
                                     <td>
-                                        <p class="menu-item" style="font-family: Helvetica, arial, sans-serif;">азия</p>
+                                        <p class="menu-item"
+                                            style="font-family: Graphik, Helvetica, arial, sans-serif;">азия</p>
                                     </td>
                                     <td>
-                                        <p class="menu-item" style="font-family: Helvetica, arial, sans-serif;">уход</p>
+                                        <p class="menu-item"
+                                            style="font-family: Graphik, Helvetica, arial, sans-serif;">уход</p>
                                     </td>
                                     <td>
-                                        <p class="menu-item hidden" style="font-family: Helvetica, arial, sans-serif;">
+                                        <p class="menu-item hidden"
+                                            style="font-family: Graphik, Helvetica, arial, sans-serif;">
                                             макияж</p>
                                     </td>
                                     <td>
-                                        <p class="menu-item hidden" style="font-family: Helvetica, arial, sans-serif;">
+                                        <p class="menu-item hidden"
+                                            style="font-family: Graphik, Helvetica, arial, sans-serif;">
                                             парфюм</p>
                                     </td>
                                     <td>
-                                        <p class="menu-item" style="font-family: Helvetica, arial, sans-serif;">бренды
+                                        <p class="menu-item"
+                                            style="font-family: Graphik, Helvetica, arial, sans-serif;">бренды
                                         </p>
                                     </td>
                                     <td>
                                         <p class="menu-item last-item"
-                                            style="font-family: Helvetica, arial, sans-serif; color: #F10D48;">
+                                            style="font-family: Graphik, Helvetica, arial, sans-serif; color: #F10D48;">
                                             распродажа</p>
                                     </td>
                                     <td class="hidden">
@@ -568,7 +617,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <table class="table" cellpadding="0" cellspacing="0" width="800" bgcolor="#FFFFFF"
+                            <table class="table table-480" cellpadding="0" cellspacing="0" width="800" bgcolor="#FFFFFF"
                                 align="center">
                                 <tr>
                                     <td align="center">
@@ -607,7 +656,7 @@
                                                 <td class="button" align="center">
                                                     <a href="https://goldapple.ru/19000010834-idole-aura"
                                                         target="_blank"
-                                                        style="font-family: Helvetica, arial, sans-serif;"><b>КУПИТЬ
+                                                        style="font-family: HelveticaNeueCyr-Bold, Helvetica, arial, sans-serif;"><b>КУПИТЬ
                                                             НОВИНКУ</b></a>
                                                 </td>
                                             </tr>
@@ -668,6 +717,14 @@
                         <td align="center">
                             <h2 class="aroma-heading" style="font-family: Helvetica, arial, sans-serif;">
                                 НЕОРДИНАРНОСТЬ И СМЕЛОСТЬ</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p class="aroma-text" style="font-family: Helvetica, arial, sans-serif;">
+                                Чистые ноты нового аромата Idôle раскрываются на обнаженной коже через цветочную дымку,
+                                где в главной роли выступает роза из Испарты.
+                            </p>
                         </td>
                     </tr>
                     <tr>
@@ -858,17 +915,23 @@
 
                                 <tr>
                                     <td align="left">
-                                        <a class="footer-tel" href="tel:+74951234567">+7 (495) 123-45-67</a>
+                                        <a class="footer-tel" href="tel:+74951234567"
+                                            style="font-family: Graphik, Helvetica, arial, sans-serif;">+7 (495)
+                                            123-45-67</a>
                                         <br />
                                         <a class="footer-support" href="https://t.me/GoldappleSupportBot"
-                                            target="_blank">Служба поддержки</a>
+                                            target="_blank" style="font-family: Helvetica, arial, sans-serif;">Служба
+                                            поддержки</a>
                                     </td>
                                     <td align="right">
                                         <a class="footer-terms" href="https://goldapple.ru/documents#selling-policy"
-                                            target="_blank">Условия пользовательского
+                                            target="_blank" style="font-family: Helvetica, arial, sans-serif;">Условия
+                                            пользовательского
                                             соглашения</a>
                                         <br />
-                                        <a class="footer-unsubscribe" href="#">Отписаться от рассылки</a>
+                                        <a class="footer-unsubscribe" href="#"
+                                            style="font-family: Helvetica, arial, sans-serif;">Отписаться от
+                                            рассылки</a>
                                     </td>
                                 </tr>
                             </table>
@@ -878,7 +941,7 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td bgcolor="#000">
                 <table class="table footer-mobile" cellpadding="0" cellspacing="0" align="center" bgcolor="#000"
                     width="800">
                     <tr>
@@ -947,25 +1010,33 @@
                                             <tr>
                                                 <td align="center" style="padding-bottom: 7px;">
                                                     <a class="footer-support" href="https://t.me/GoldappleSupportBot"
-                                                        target="_blank">Служба поддержки</a>
+                                                        target="_blank"
+                                                        style="font-family: HelveticaNeueCyr-Bold, Helvetica, arial, sans-serif;">Служба
+                                                        поддержки</a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" style="padding-bottom: 18px;">
-                                                    <a class="footer-tel" href="tel:+74951234567">+7 (495) 123-45-67</a>
+                                                    <a class="footer-tel" href="tel:+74951234567"
+                                                        style="font-family: Graphik, Helvetica, arial, sans-serif;">+7
+                                                        (495) 123-45-67</a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" style="padding-bottom: 5px;">
                                                     <a class="footer-terms"
                                                         href="https://goldapple.ru/documents#selling-policy"
-                                                        target="_blank">Условия пользовательского
+                                                        target="_blank"
+                                                        style="font-family: HelveticaNeueCyr-Bold, Helvetica, arial, sans-serif;">Условия
+                                                        пользовательского
                                                         соглашения</a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" style="padding-bottom: 33px;">
-                                                    <a class="footer-unsubscribe" href="#">Отписаться от рассылки</a>
+                                                    <a class="footer-unsubscribe" href="#"
+                                                        style="font-family: HelveticaNeueCyr-Bold, Helvetica, arial, sans-serif;">Отписаться
+                                                        от рассылки</a>
                                                 </td>
                                             </tr>
                                         </table>
